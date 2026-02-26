@@ -1,5 +1,5 @@
 void main() {
-    String str = "Holberton School" * 3;
-    print(str);
+    String str = "Holberton School";
+    print(str * 3);
     print("$str\n");
 }
