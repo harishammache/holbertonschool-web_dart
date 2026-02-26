@@ -1,6 +1,5 @@
 void main() {
-    String text = "Holberton School";
-    String result = text * 3;
-    print(result);
+    String text = "Holberton School" * 3;
+    print(text);
     print("Holberton\n");
 }
