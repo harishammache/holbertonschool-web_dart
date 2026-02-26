@@ -2,7 +2,7 @@ void main(List<String> args){
     int number = int.parse(args[0]);
 
     if (number > 0){
-        print("$number is positiv");
+        print("$number is positive");
     }
     if (number == 0){
         print("$number is zero");
