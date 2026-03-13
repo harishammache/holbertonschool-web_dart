@@ -5,6 +5,12 @@ class Password{
         _password = password;
     }
 
+    String get password => _password;
+
+    set password(String value) {
+        _password = value;
+    }
+
     bool isValid(){
         if (_password.length >= 8 && 
         _password.length <= 16 &&
