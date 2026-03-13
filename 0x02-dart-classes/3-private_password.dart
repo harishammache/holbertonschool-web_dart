@@ -5,12 +5,6 @@ class Password{
         _password = password;
     }
 
-    String get password => _password;
-
-    set password(String value) {
-        _password = value;
-    }
-
     bool isValid(){
         if (_password.length >= 8 && 
         _password.length <= 16 &&
@@ -24,6 +18,6 @@ class Password{
     }
     
     String toString(){
-        return "Your Password is ${_password}";
+        return "Your Password is: ${_password}";
     }
 }
