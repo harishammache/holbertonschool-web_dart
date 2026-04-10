@@ -12,13 +12,11 @@ Future<String> printRmCharacters() async {
         }
 
         final Map<String, dynamic> data = jsonDecode(response.body);
-
         final List<dynamic> results = data['results'];
+
         for (final character in results) {
             print(character['name']);
         }
-
-        url = data['info']['next'];
 
         return 'success';
     }
