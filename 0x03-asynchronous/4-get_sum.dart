@@ -13,7 +13,7 @@ Future<int> calculateTotal() async {
         double total = 0;
         for (var product in orders) {
             String priceJson = await fetchProductPrice(product);
-            double prince = jsonDecode(priceJson);
+            double price = jsonDecode(priceJson);
             total += price;
         }
         return total;
