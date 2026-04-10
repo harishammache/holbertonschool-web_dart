@@ -3,10 +3,9 @@ import 'package:http/http.dart' as http;
 
 Future<String> printRmCharacters() async {
     try {
-        String? url = "https://rickandmortyapi.com/api/character/";
-
-        while (url != null) {
-        final response = await http.get(Uri.parse(url));
+        final response = await http.get(
+        Uri.parse('https://rickandmortyapi.com/api/character'),
+        );
 
         if (response.statusCode != 200) {
             throw 'HTTP ${response.statusCode}';
@@ -23,7 +22,6 @@ Future<String> printRmCharacters() async {
         }
 
         return 'success';
-
     }
     catch (e) {
         return 'error caught: $e';
