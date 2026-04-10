@@ -3,11 +3,11 @@ import "3-util.dart";
 Future<String> greetUser() async {
     try {
         String user = await fetchUserData();
-        Map<String, dynamic> userMap = jsonDecode(user)
-        return "Hello ${userMap['username']} ."
+        Map<String, dynamic> userMap = jsonDecode(user);
+        return "Hello ${userMap['username']} .";
     }
     catch (e) {
-        return ("error caught: $e")
+        return ("error caught: $e");
     }
 }
 
