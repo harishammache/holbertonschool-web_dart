@@ -16,8 +16,8 @@ Future<int> calculateTotal() async {
             double prince = jsonDecode(priceJson);
             total += price;
         }
+        return total;
     }
-    return total;
     catch (e){
         return -1;
     }
