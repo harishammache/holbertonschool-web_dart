@@ -19,7 +19,6 @@ Future<String> printRmCharacters() async {
         }
 
         url = data['info']['next'];
-        }
 
         return 'success';
     }
